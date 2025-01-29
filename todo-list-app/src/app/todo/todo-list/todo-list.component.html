@@ -1,0 +1,36 @@
+<!--
+<ul>
+@for (todo of todos$|async; track todo.id) {
+    <li>userId : {{todo.userId}}, Titre: {{todo.title}}, </li>
+} @empty {
+    <p>Y'a rien...</p>
+}
+</ul>
+-->
+<table mat-table [dataSource]="todos$">
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let todo">{{todo.id}}</td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Titre</th>
+        <td mat-cell *matCellDef="let todo">{{todo.title}}</td>
+    </ng-container>
+    <ng-container matColumnDef="completed">
+        <th mat-header-cell *matHeaderCellDef>Est completé?</th>
+        <td mat-cell *matCellDef="let todo">{{todo.completed?"Oui":"Non"}}</td>
+    </ng-container>
+    <ng-container matColumnDef="ticked">
+        <th mat-header-cell *matHeaderCellDef>Tick me</th>
+        <td mat-cell *matCellDef="let todo"><mat-checkbox [checked]="todo.completed" (change)="update(todo)"/></td>
+    </ng-container>
+    <ng-container matColumnDef="deleteButton">
+        <th mat-header-cell *matHeaderCellDef>Supprimer</th>
+        <td mat-cell *matCellDef="let todo">
+            <button mat-raised-button
+            matTooltip="Supprime cette ligne" (click)="delete(todo)">SUPPRIMER</button>
+        </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
