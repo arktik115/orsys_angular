@@ -5,6 +5,13 @@ Important pour faire marcher le projet:
 $ npx json-server@0.17 todos.json --watch --delay 500 --port 5000
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# Ajouter un raccourci clavier sur vsCode
+
+clavier: ctrl+shift+p
+sélectionner : configurer des extraits de code
+taper : typescript.json
+ajouter un raccourci clavier ☺☺☺☺☺
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Pourquoi les modules ont été supprimés:
 
 providers => Permettent de déclarer des services dans les modules avec certains parametres
