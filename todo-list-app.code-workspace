@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "data"
+		},
+		{
+			"path": "ngrx-counter-app"
+		},
+		{
+			"path": "ngrx-todo-list-app"
 		}
 	]
 }

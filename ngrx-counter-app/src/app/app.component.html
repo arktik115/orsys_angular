@@ -1,0 +1,9 @@
+<button (click)="increment()">Increment</button>
+<button (click)="incrementByX()">Increment by :</button>
+<input type="text" [(ngModel)]="value">
+
+<div>Current Count: {{ (count$ | async)!.counterValue }}</div>
+
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="reset()">Reset Counter</button>

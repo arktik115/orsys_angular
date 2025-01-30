@@ -1,36 +1,6 @@
 {
   "todos": [
     {
-      "title": "123",
-      "completed": true,
-      "id": 202
-    },
-    {
-      "title": "123",
-      "completed": false,
-      "id": 203
-    },
-    {
-      "title": "bidule",
-      "completed": true,
-      "id": 204
-    },
-    {
-      "title": "machine",
-      "completed": true,
-      "id": 205
-    },
-    {
-      "title": "159",
-      "completed": true,
-      "id": 206
-    },
-    {
-      "title": "123",
-      "completed": false,
-      "id": 207
-    },
-    {
       "title": "15978855",
       "completed": false,
       "id": 208
