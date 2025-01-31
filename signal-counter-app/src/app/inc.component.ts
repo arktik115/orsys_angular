@@ -4,7 +4,7 @@ import { CountSignalService } from './services/count-signal.service';
 
 @Component({
   selector: 'inc',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './inc.component.html',
 })
 export class IncComponent {

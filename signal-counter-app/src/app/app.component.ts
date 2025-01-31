@@ -1,11 +1,10 @@
 import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ShowComponent } from './show.component';
 import { IncComponent } from './inc.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, IncComponent, ShowComponent],
+  imports: [IncComponent, ShowComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

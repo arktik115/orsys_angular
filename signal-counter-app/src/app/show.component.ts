@@ -1,10 +1,9 @@
-import { Component, computed, effect, inject, OnInit, Signal, signal, WritableSignal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, effect, inject, OnInit } from '@angular/core';
 import { CountSignalService } from './services/count-signal.service';
 
 @Component({
   selector: 'show',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './show.component.html',
 })
 export class ShowComponent implements OnInit{
