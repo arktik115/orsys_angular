@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes), 
     provideAnimationsAsync(), 
-    provideStore({todoList:todoReducer}), 
+    provideStore({todoList:todoReducer}),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }), 
     provideEffects(TodoEffectService),
     provideHttpClient(),

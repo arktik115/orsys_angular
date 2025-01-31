@@ -6,5 +6,6 @@ export const initialState:Todos = []
 
 export const todoReducer = createReducer(
   initialState,
-  on(loadTodosSuccess, (state,action)=> action.todos)
+  on(loadTodosSuccess, (state,action)=> action.todos),
+  // on(loadTodosSuccess, (state,action)=> ({...state, state:action.todos})), // ou ça
 );
