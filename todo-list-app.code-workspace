@@ -11,6 +11,12 @@
 		},
 		{
 			"path": "ngrx-todo-list-app"
+		},
+		{
+			"path": "pwa-todo-list"
+		},
+		{
+			"path": "signal-counter-app"
 		}
 	]
 }
